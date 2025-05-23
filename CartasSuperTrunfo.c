@@ -16,12 +16,20 @@ float Calc_pib_perCapita(float pib, unsigned long int populacao)
     return (pib_per_capita);
 }
 
+float Calc_superPoder (int pontos_turisticos, unsigned long int populacao, float area, float pib, 
+float pib_percapita, float densidade){
+    float supePoder = (float) pontos_turisticos + populacao + area + pib + pib_percapita + (1/densidade);
+    return (supePoder);
+}
+
+
 int main()
 {
     // Declarando as variáveis com as características das cartas
     int pontos_turisticos;
     unsigned long int populacao;
-    float area, pib, Super_poder;
+    float area, pib;
+    float superPoder_01, superPoder_02;
     char estado, codigo[5], cidade[50];
 
     float densidade = Calc_densidade(populacao, area);
@@ -64,6 +72,9 @@ int main()
     // funções de calculos
     Calc_densidade(populacao, area);
     Calc_pib_perCapita(pib, populacao);
+
+    //Função Super Poder
+    superPoder_01 = Calc_superPoder (pontos_turisticos, populacao, area, pib, pib_percapita, densidade);
 
     // Exibição dos Dados das Cartas:
     printf("======================================\n");
@@ -114,6 +125,9 @@ int main()
     // funções de calculos
     Calc_densidade(populacao, area);
     Calc_pib_perCapita(pib, populacao);
+
+    //Função Super Poder
+    superPoder_01 = Calc_superPoder (pontos_turisticos, populacao, area, pib, pib_percapita, densidade);
 
     // Exibição dos Dados das Cartas:
     printf("======================================\n");
