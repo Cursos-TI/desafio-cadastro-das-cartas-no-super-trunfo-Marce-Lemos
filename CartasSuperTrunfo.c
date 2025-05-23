@@ -32,6 +32,15 @@ int main() {
     printf("Digite o número de pontos turísticos da cidade: \n");
     scanf("%d", &pontos_turisticos);
 
+    //Calculando a densidade populacional
+    float Calc_densidade (int populacao, float area) {
+        float densidade_pop = (float) populacao / area;
+    }
+
+    float Calc_pib_perCapita (float pib, int populacao) {
+        float pib_per_capita = (float) pib / populacao;
+    }
+       
     // Exibição dos Dados das Cartas:
     printf("======================================\n");
     printf("Estado : %c\n", estado);
@@ -41,6 +50,8 @@ int main() {
     printf("Área: %.2f Km²\n", area);
     printf("PIB: %.2f bilhões de reais\n", pib);
     printf("Número de Pontos Turísticos: %d\n", pontos_turisticos);
+    printf("Densidade Populacional: %.2f hab/km²\n", Calc_densidade(populacao, area));
+    printf("PIB per Capita: %.2f Reais\n", Calc_pib_perCapita (pib, populacao));
     printf("\n");
 
     return 0;
