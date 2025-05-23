@@ -36,7 +36,8 @@ int main() {
     float Calc_densidade (int populacao, float area) {
         float densidade_pop = (float) populacao / area;
     }
-
+    
+    // Calculando PIB per capita
     float Calc_pib_perCapita (float pib, int populacao) {
         float pib_per_capita = (float) pib / populacao;
     }
