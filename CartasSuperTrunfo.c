@@ -4,29 +4,27 @@
 // Desafio Super Trunfo - Países
 
 // Calculando a densidade populacional
-float Calc_densidade(unsigned long int populacao, float area)
-{
+float Calc_densidade(unsigned long int populacao, float area){
     float densidade_pop = populacao / area;
     return (densidade_pop);
 }
+
 // Calculando PIB per capita
-float Calc_pib_perCapita(float pib, unsigned long int populacao)
-{
+float Calc_pib_perCapita(float pib, unsigned long int populacao){
     float pib_per_capita = pib / populacao;
     return (pib_per_capita);
 }
 
 // Função de calculo de Super Poder
-float Calc_superPoder (int pontos_turisticos, unsigned long int populacao, float area, float pib, 
-float pib_percapita, float densidade){
-    float supePoder = (float) pontos_turisticos + populacao + area + pib + pib_percapita + (1/densidade);
+float Calc_superPoder (int pontos_turisticos, unsigned long int populacao, float area, float pib, float pib_percapita, float densidade){
+    float supePoder = (float) pontos_turisticos + populacao + area + pib + pib_percapita + (1 / densidade);
     return (supePoder);
 }
-
 
 int main()
 {
     // Declarando as variáveis com as características das cartas
+    
     // Foi usado C1 para refência a carta 1 e C2 para carta 2
     int pontos_turisticos_C1;
     unsigned long int populacao_C1;
@@ -178,7 +176,6 @@ int main()
     printf("Super Poder: %d\n", Comp_superPoder);
     printf("======================================\n");
     printf("\n");
-
 
     return 0;
 }
