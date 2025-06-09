@@ -146,15 +146,14 @@ int main(){
 
     //comparações com if/else
     if (pontos_turisticos_C1 > pontos_turisticos_C2){
-        printf("Carta %s - %s : %d", codigo_C1, cidade_C1, pontos_turisticos_C1);
-        printf("Carta %s - %s : %d", codigo_C2, cidade_C2, pontos_turisticos_C2);
-        printf("Resultado: Carta %s - %s venceu!", codigo_C1, cidade_C1, pontos_turisticos_C1);
+        printf("Carta %c%s - %s: %d\n", estado_C1, codigo_C1, cidade_C1, pontos_turisticos_C1);
+        printf("Carta %c%s - %s: %d\n", estado_C2, codigo_C2, cidade_C2, pontos_turisticos_C2);
+        printf("Resultado: Carta %s - %s: %d venceu!\n", codigo_C1, cidade_C1, pontos_turisticos_C1);
     } else {
-        printf("Carta %s - %s : %d", codigo_C1, cidade_C1, pontos_turisticos_C1);
-        printf("Carta %s - %s : %d", codigo_C2, cidade_C2, pontos_turisticos_C2);
-        printf("Resultado: Carta %s - %s venceu!", codigo_C2, cidade_C2);
+        printf("Carta %c%s - %s: %d\n", estado_C1, codigo_C1, cidade_C1, pontos_turisticos_C1);
+        printf("Carta %c%s - %s: %d\n", estado_C2, codigo_C2, cidade_C2, pontos_turisticos_C2);
+        printf("Resultado: Carta %s - %s venceu!\n", codigo_C2, cidade_C2);
     }
-
 
     // Imprimindo resultado das comparações
     /*printf("============ COMPARAÇÕES =============\n");
