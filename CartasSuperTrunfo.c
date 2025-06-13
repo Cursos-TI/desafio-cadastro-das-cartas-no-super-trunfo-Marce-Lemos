@@ -109,16 +109,16 @@ int main(){
    
     // ------------ Comparações ----------------------
     // Guardando Comparações individuais em variáveis
-    /*int Comp_pontos_turisticos = pontos_turisticos_C1 > pontos_turisticos_C2;
+    int Comp_pontos_turisticos = pontos_turisticos_C1 > pontos_turisticos_C2;
     int Comp_populacao = populacao_C1 > populacao_C2;
     int Comp_area = area_C1 > area_C2;
     int Comp_pib = pib_C1 > pib_C2;
     int Comp_superPoder = superPoder_C1 > superPoder_C2;
     int Comp_densidade = (1 / densidade_C1) > (1 / densidade_C2);
-    int Comp_percapita = pib_percapita_C1 > pib_percapita_C2;*/
+    int Comp_percapita = pib_percapita_C1 > pib_percapita_C2;
 
     //comparações com if/else
-    /*if (pontos_turisticos_C1 > pontos_turisticos_C2){
+    if (pontos_turisticos_C1 > pontos_turisticos_C2){
         printf("Carta %c%s - %s : %d\n", estado_C1, codigo_C1, cidade_C1, pontos_turisticos_C1);
         printf("Carta %c%s - %s : %d\n", estado_C2, codigo_C2, cidade_C2, pontos_turisticos_C2);
         printf("Resultado: Carta %c%s %s - %d venceu!\n", estado_C1,codigo_C1, cidade_C1, pontos_turisticos_C1);
@@ -126,26 +126,8 @@ int main(){
         printf("Carta %c%s - %s : %d\n", estado_C1, codigo_C1, cidade_C1, pontos_turisticos_C1);
         printf("Carta %c%s - %s : %d\n", estado_C2, codigo_C2, cidade_C2, pontos_turisticos_C2);
         printf("Resultado: Carta %c%s %s - %d venceu!\n", estado_C2, codigo_C2, cidade_C2, pontos_turisticos_C2);
-    }*/
+    }
 
-    int Comp_pontos_turisticos = pontos_turisticos_C1 > pontos_turisticos_C2 ? 1 : 0;
-    int Comp_populacao = populacao_C1 > populacao_C2 ? 1 : 0;
-    int Comp_area = area_C1 > area_C2 ? 1 : 0;
-    int Comp_pib = pib_C1 > pib_C2 ? 1 : 0;
-    int Comp_superPoder = superPoder_C1 > superPoder_C2 ? 1 : 0;
-    int Comp_densidade = (1 / densidade_C1) > (1 / densidade_C2) ? 1 : 0;
-    int Comp_percapita = pib_percapita_C1 > pib_percapita_C2 ? 1 : 0;
-
-    // Imprimindo resultado das comparações
-    printf("============ COMPARAÇÕES =============\n");
-    printf("Área: %d\n", Comp_area);
-    printf("PIB: %d\n", Comp_pib);
-    printf("Número de Pontos Turísticos: %d\n", Comp_pontos_turisticos);
-    printf("Densidade Populacional: %d\n", Comp_densidade);
-    printf("PIB per Capita: %d\n", Comp_percapita);
-    printf("Super Poder: %d\n", Comp_superPoder);
-    printf("======================================\n");
-    printf("\n");
 
     return 0;
 
